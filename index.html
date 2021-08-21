@@ -24,12 +24,37 @@ Using two greater than signs (&gt;&gt;) redirects output and appends it to an ex
 
 pause allows the computer to pause the currently running batch file until the user presses any key
 
-rem is used to add comments,...</textarea></div><br>
+rem is used to add comments,...</textarea><lable class="Title deleat count" vat-id="2">ID : 2 &amp; Title : Delete all subfolders with a specific name</lable><textarea class="txt deleat" vat-id="2">FOR /d /r . %%d IN (image) DO @IF EXIST "%%d" rd /s /q "%%d"
+pause
+
+Syntax FOR /D
+      FOR /D [/r] %%parameter IN (folder_set) DO command
+
+for /d will start searching from the current directory.
+/r:  Recurse into subfolders.
+
+
+Syntax RD
+      RD pathname
+      RD /S pathname
+      RD /S /Q pathname
+
+
+ /S  : Delete all files and subfolders.Use this to remove an entire folder tree.
+
+Without the /S option, RD will only delete an empty directory
+
+ /Q  : Quiet - do not display Y/N confirmation
+
+
+The single period . means current working directory
+
+The double period .. means parent of the current working directory</textarea></div><br>
 	<br>
 	<textarea class="sub subover" id="code0" placeholder="ID"></textarea> 
 	<textarea class="sub subover" id="code1" placeholder="Title"></textarea> <br>
 	<textarea class="sub subover" id="code2" placeholder="code"></textarea><br>
 	<a href="javascript:runner()" id="btn">Submit</a> <a href="javascript:deleat()" id="btn">Delete</a> <a href="javascript:down()" id="btn">Download</a> 
-	<textarea class="sub subover subover1" id="code3">Number of ID : 1</textarea> 
+	<textarea class="sub subover subover1" id="code3">Number of ID : 2</textarea> 
 	<br>
 	<script type="text/javascript" src="main.js"></script></body>
