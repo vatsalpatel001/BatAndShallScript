@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body {
+    /*height: 100vh;*/
+    width: 100vw;
+    background-color: #67233c;
+    font-weight: 300!important;
+    color: #532922;
+    user-select: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#master0 {
+    padding: 10px;
+  /*  height: calc(100vh - 60px);*/
+ /*   overflow-y: auto;
+    overflow-X: hidden;*/
+}
+#master, #master0, .head {
+    text-align: center
+}
+#master {
+    width: 100vw;
+    color: #f9f9f0;
+    position: relative;
+    overflow: auto
+}
+.head {
+    height: 60px;
+    color: #000;
+    font-weight: bolder;
+    background-color: #f8cc4f
+}
+#HeadTitle, .svgIco {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 60px
+}
+.svgIco {
+    font-size: 30px;
+    cursor: pointer;
+    right: 0;
+    width: 130px
+}
+#HeadTitle {
+    text-transform: uppercase;
+    left: 0;
+    width: calc(100vw - 130px);
+    white-space: nowrap;
+    overflow: hidden!important;
+    text-overflow: ellipsis;
+    font-size: 25px
+}
+.cta svg, .cta:before {
+    top: 0;
+    transition: all .3s ease
+}
+.cta:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    width: 56px;
+    height: 56px;
+    background: #fff!important;
+    background: #f9f9f0!important
+}
+ol li {
+    padding: 5px 10px 5px 25px!important;
+    text-indent: -1em;
+    display: list-item!important;
+    margin: 10px;
+    list-style-position: inside;
+    border-radius: 5px;
+    font-size: 20px
+}
+.cta:hover:before {
+    width: 100%
+}
+#CloseBtn {
+    border: 0;
+    background: 0 0;
+    MARGIN-BOTTOM: 20PX;
+    MARGIN-top: 20PX;
+    transition: .2s;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer
+}
+.cta {
+    margin: auto;
+    padding: 14px 22px;
+    transition: all .2s ease
+}
+.cta svg {
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px)
+}
+.cta, .cta span, .cta svg {
+    position: relative;
+    vertical-align: middle
+}
+::-webkit-scrollbar {
+    width: 12px
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    border-radius: 10px
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)
+}
+.vatTitle {
+    background: #21bee9;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000
+}
+#HeadTitle {
+    text-align: left
+}
+#master0 {
+    font-size: 22px
+}
+.vatDiv, .vatopt {
+    border-radius: 5px
+}
+.vatDiv {
+    background-color: #f8cc4f;
+    margin: 10px;
+    font-size: 20px;
+    color: #000;
+    display: table;
+    table-layout: fixed;
+    box-shadow: 3px 3px 2px #f9f9f0;
+    width: calc(100vw - 30px);
+    text-align: left;
+    padding: 10px;
+    line-height: 40px
+}
+.vatopt {
+    display: inline-block;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(#dedede, #f5f5f5);
+    margin: 3px;
+    padding: 3px
+}
+textarea {
+    padding: 5px;
+    font-weight: 700;
+    width: calc(100% - 10px);
+    resize: none;
+    height: 25vh;
+    margin: 5px;
+    box-shadow: inset 1px 1px 4px 1px #000
+}
+span a {
+    margin: auto;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #000;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 2px outset #fff;
+    font-size: 24px;
+    color: #fff;
+    box-shadow: 5px 5px 10px #000
+}
+span{
+    color: white;
+}
+a span{
+    color: black;
+}
+/*EvtsBind("#CloseBtn","click",convert);
+function convert(){
+  let txt ="echo "+GetEl("#input").value;
+for(let i=0;i<ConstReplacer_arr.length;i++){
+  txt=txt.replaceAll(ConstReplacer_arr[i][0], ConstReplacer_arr[i][1]);
+}
+txt=txt.replace(/\n/g,"\n echo ");
+GetEl("#output").value =txt;
+}*/
