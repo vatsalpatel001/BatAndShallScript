@@ -49,12 +49,31 @@ Without the /S option, RD will only delete an empty directory
 
 The single period . means current working directory
 
-The double period .. means parent of the current working directory</textarea></div><br>
+The double period .. means parent of the current working directory</textarea><lable class="Title deleat count" vat-id="3">ID : 3 &amp; Title : Copy And XCopy,Copy File, Copy Folder.</lable><textarea class="txt deleat" vat-id="3">copy one file,....
+FOR /d /r . %%d IN (*) DO @IF EXIST "%%d" copy /d /y "%CD%\download.png" "%%d\d1.png" 
+pause
+
+copy Folder,Subfolders and all files,..
+FOR /d  %%d IN (*) DO @IF EXIST "%%d" xcopy /d /s /y "%CD%\demo4" "%%d\demo4\"
+pause
+
+copy == Copies one or more than one files to another location
+xcopy== Copies files and directory trees.Subfolder,..
+
+/s: Copies directories and subdirectories, unless they are empty. If you omit /s, xcopy works within a single directory.
+
+/y : Suppresses prompting to confirm that you want to overwrite an existing destination file
+
+/d :  only copy files that are newer than their destination opposite.
+
+ /H : Copy hidden and system files and folders (default=N)
+
+/U : Copy only files that already exist in destination.</textarea></div><br>
 	<br>
 	<textarea class="sub subover" id="code0" placeholder="ID"></textarea> 
 	<textarea class="sub subover" id="code1" placeholder="Title"></textarea> <br>
 	<textarea class="sub subover" id="code2" placeholder="code"></textarea><br>
 	<a href="javascript:runner()" id="btn">Submit</a> <a href="javascript:deleat()" id="btn">Delete</a> <a href="javascript:down()" id="btn">Download</a> 
-	<textarea class="sub subover subover1" id="code3">Number of ID : 2</textarea> 
+	<textarea class="sub subover subover1" id="code3">Number of ID : 3</textarea> 
 	<br>
 	<script type="text/javascript" src="main.js"></script></body>
