@@ -91,12 +91,16 @@ Delete all files that end with the letter A
 
 DEL *A.*
 </textarea><lable class="Title deleat count" vat-id="5">ID : 5 &amp; Title : Copy All Files From Source Folder to all Matching destination Folder. </lable><textarea class="txt deleat" vat-id="5">FOR /d /r . %%d IN (Voice_DestinationFolder) DO @IF EXIST "%%d" xcopy /d /y "%CD%\Voice_sourceFolder\*" "%%d"
-pause</textarea></div><br>
+pause</textarea><lable class="Title deleat count" vat-id="6">ID : 6 &amp; Title : Create folder structure, but do not copy files.</lable><textarea class="txt deleat" vat-id="6">xcopy /t /e "V:\Source" "V:\Dest"
+
+ /T    Create folder structure, but do not copy files. 
+         Do not include empty folders or subfolders. 
+          /T /E will include empty folders and subfolders.</textarea></div><br>
 	<br>
 	<textarea class="sub subover" id="code0" placeholder="ID"></textarea> 
 	<textarea class="sub subover" id="code1" placeholder="Title"></textarea> <br>
 	<textarea class="sub subover" id="code2" placeholder="code"></textarea><br>
 	<a href="javascript:runner()" id="btn">Submit</a> <a href="javascript:deleat()" id="btn">Delete</a> <a href="javascript:down()" id="btn">Download</a> 
-	<textarea class="sub subover subover1" id="code3">Number of ID : 5</textarea> 
+	<textarea class="sub subover subover1" id="code3">Number of ID : 6</textarea> 
 	<br>
 	<script type="text/javascript" src="main.js"></script></body>
