@@ -125,7 +125,8 @@ rem you can also rename folder use "for /d /r" instead of "for /r"
 Syntex 
 	 REN [drive:][path]SourceMask TargetMask
 
-
+FOR /d /r . %%d IN (*) DO @IF EXIST "%%d\home.html" rename  "%%d\home.html" "index.html"
+pause
 
 </textarea></div><br>
 	<br>
