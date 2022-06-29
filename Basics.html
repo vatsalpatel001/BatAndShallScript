@@ -135,12 +135,28 @@ set count=0
 FOR  /r . %%d IN (*index.html) DO @IF EXIST "%%d" set /a count+=1 &amp;&amp; echo "%%d"
 echo %count%
 endlocal
-pause</textarea></div><br>
+pause</textarea><lable class="Title deleat count" vat-id="11">ID : 11 &amp; Title : FOR /L</lable><textarea class="txt deleat" vat-id="11">FOR /L
+Conditionally perform a command for a range of numbers.
+
+Syntax   
+      FOR /L %%parameter IN (start,step,end) DO command 
+
+Key
+   start       : The first number  
+   step        : The amount by which to increment the sequence 
+   end         : The last number 
+
+   command     : The command to carry out, including any parameters.
+                 This can be a single command, or if you enclose it
+                 in (brackets), several commands, one per line.
+
+   %%parameter : A replaceable parameter:
+                 in a batch file use %%G (on the command line %G)</textarea></div><br>
 	<br>
 	<textarea class="sub subover" id="code0" placeholder="ID"></textarea> 
 	<textarea class="sub subover" id="code1" placeholder="Title"></textarea> <br>
 	<textarea class="sub subover" id="code2" placeholder="code"></textarea><br>
 	<a href="javascript:runner()" id="btn">Submit</a> <a href="javascript:deleat()" id="btn">Delete</a> <a href="javascript:down()" id="btn">Download</a> 
-	<textarea class="sub subover subover1" id="code3">Number of ID : 10</textarea> 
+	<textarea class="sub subover subover1" id="code3">Number of ID : 11</textarea> 
 	<br>
 	<script type="text/javascript" src="main.js"></script></body>
