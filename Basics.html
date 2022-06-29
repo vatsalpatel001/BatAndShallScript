@@ -129,12 +129,18 @@ FOR /d /r . %%d IN (*) DO @IF EXIST "%%d\home.html" rename  "%%d\home.html" "ind
 pause
 
 </textarea><lable class="Title deleat count" vat-id="9">ID : 9 &amp; Title : Add Text In all Matching Files</lable><textarea class="txt deleat" vat-id="9">for /r %%i in (*style.css) do TYPE "%CD%\file.txt" &gt;&gt; %%i
+pause</textarea><lable class="Title deleat count" vat-id="10">ID : 10 &amp; Title : Count Matching Files in folder and subfolders</lable><textarea class="txt deleat" vat-id="10">@echo off
+setlocal enableextensions
+set count=0
+FOR  /r . %%d IN (*index.html) DO @IF EXIST "%%d" set /a count+=1 &amp;&amp; echo "%%d"
+echo %count%
+endlocal
 pause</textarea></div><br>
 	<br>
 	<textarea class="sub subover" id="code0" placeholder="ID"></textarea> 
 	<textarea class="sub subover" id="code1" placeholder="Title"></textarea> <br>
 	<textarea class="sub subover" id="code2" placeholder="code"></textarea><br>
 	<a href="javascript:runner()" id="btn">Submit</a> <a href="javascript:deleat()" id="btn">Delete</a> <a href="javascript:down()" id="btn">Download</a> 
-	<textarea class="sub subover subover1" id="code3">Number of ID : 9</textarea> 
+	<textarea class="sub subover subover1" id="code3">Number of ID : 10</textarea> 
 	<br>
 	<script type="text/javascript" src="main.js"></script></body>
